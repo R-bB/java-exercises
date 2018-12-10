@@ -56,10 +56,7 @@ public class Fraction extends Number implements Comparable<Fraction> {
     public boolean equals(Fraction other) {
         int num1 = this.numerator * other.getDenominator();
         int num2 = this.denominator * other.getNumerator();
-        if (num1 == num2)
-            return true;
-        else
-            return false;
+        return num1 == num2;
     }
 
     public double doubleValue() {
